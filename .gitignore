@@ -1,0 +1,8 @@
+# Ignore .github directory
+.github/
+
+# Ignore .vscode directory
+.vscode/
+
+# Ignore ecommerce_cnx.session.sql file
+ecommerce_cnx.session.sql

@@ -1,0 +1,7 @@
+class: Order
+table: orders
+fields:
+  customer_id: int
+  product_id: int
+  quantity: int
+  total_amount: double

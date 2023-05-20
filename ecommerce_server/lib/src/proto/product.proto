@@ -1,0 +1,76 @@
+syntax = "proto3";
+
+package product;
+
+// Product message represents a product entity
+message Product {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+  float price = 4;
+  string image = 5;
+}
+
+// GetProductRequest message represents a request to get a product by ID
+message GetProductRequest {
+  int32 product_id = 1;
+}
+
+// GetProductResponse message represents a response containing a product
+message GetProductResponse {
+  Product product = 1;
+}
+
+// GetProductsResponse message represents a response containing a list of products
+message GetProductsResponse {
+  repeated Product products = 1;
+}
+
+// Empty message represents an empty message payload
+message Empty {}
+
+// CreateProductRequest message represents a request to create a new product
+message CreateProductRequest {
+  string name = 1;
+  string description = 2;
+  float price = 3;
+  string image = 4;
+}
+
+// CreateProductResponse message represents a response containing the created product
+message CreateProductResponse {
+  Product product = 1;
+}
+
+// UpdateProductRequest message represents a request to update an existing product
+message UpdateProductRequest {
+  int32 product_id = 1;
+  string name = 2;
+  string description = 3;
+  float price = 4;
+  string image = 5;
+}
+
+// UpdateProductResponse message represents a response for updating a product
+message UpdateProductResponse {
+  Product product = 1;
+}
+
+// DeleteProductRequest message represents a request to delete a product by ID
+message DeleteProductRequest {
+  int32 product_id = 1;
+}
+
+// DeleteProductResponse message represents a response for deleting a product
+message DeleteProductResponse {
+  string message = 1;
+}
+
+// ProductService defines the gRPC service for managing products
+service ProductService {
+  rpc GetProduct(GetProductRequest) returns (GetProductResponse);
+  rpc GetProducts(Empty) returns (GetProductsResponse);
+  rpc CreateProduct(CreateProductRequest) returns (CreateProductResponse);
+  rpc UpdateProduct(UpdateProductRequest) returns (UpdateProductResponse);
+  rpc DeleteProduct(DeleteProductRequest) returns (DeleteProductResponse);
+}
