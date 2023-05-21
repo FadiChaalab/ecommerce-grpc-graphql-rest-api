@@ -2,6 +2,11 @@
 
 This repository contains the code for a microservices-based E-commerce application. The application is designed to showcase the interactions between microservices and utilizes various architectural styles, including REST, gRPC, and GraphQL.
 
+## Screenshots
+
+![Screenshot 1](screenshots/1.png)
+*Home Page*
+
 ## Requirements
 
 To run and develop the E-commerce application, ensure that you have the following requirements installed:
