@@ -8,7 +8,7 @@ To run and develop the E-commerce application, ensure that you have the followin
 
 1. **Flutter**: Flutter is used for the client-side development of the application's user interface. Make sure you have Flutter installed on your development machine. For installation instructions, refer to the official Flutter documentation: [Flutter Installation Guide](https://flutter.dev/docs/get-started/install)
 
-2. **Serverpod**: Serverpod is the framework used for building the server-side microservices. It provides tools and utilities to facilitate the development and deployment of microservices. To install Serverpod, follow the instructions in the Serverpod documentation: [Serverpod Documentation](https://serverpod.io/docs/)
+2. **Serverpod**: Serverpod is the framework used for building the server-side microservices. It provides tools and utilities to facilitate the development and deployment of microservices. To install Serverpod, follow the instructions in the Serverpod documentation: [Serverpod Documentation](https://docs.serverpod.dev/)
 
 3. **Docker**: Docker is used for containerization and deployment of the microservices. It provides a consistent and isolated environment for running the microservices and their dependencies. Install Docker by following the instructions specific to your operating system: [Docker Installation Guide](https://docs.docker.com/get-docker/)
 
